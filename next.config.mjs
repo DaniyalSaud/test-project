@@ -1,8 +1,7 @@
 const nextConfig = {
-  output: 'standalone',
-  reactStrictMode: true,
-}
+  outputFileTracingExcludes: {
+	"/api": ["./.next/cache/**/*"]
+  }
+};
 
-export default nextConfig
-
-export const output = 'standalone'
+export default nextConfig;
