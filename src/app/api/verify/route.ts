@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     frontImage.greyscale();
     backImage.greyscale();
 
-    const threshold = 160; // Adjust this value (0-255) to control sensitivity
+    const threshold = 220; // Adjust this value (0-255) to control sensitivity
 
     frontImage.scan(
       0,

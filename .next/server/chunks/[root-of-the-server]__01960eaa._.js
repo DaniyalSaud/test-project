@@ -196,7 +196,7 @@ async function POST(req) {
         const backImage = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jimp$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__["Jimp"].read(backBuffer);
         frontImage.greyscale();
         backImage.greyscale();
-        const threshold = 160; // Adjust this value (0-255) to control sensitivity
+        const threshold = 220; // Adjust this value (0-255) to control sensitivity
         frontImage.scan(0, 0, frontImage.bitmap.width, frontImage.bitmap.height, function(x, y, idx) {
             // Get the red channel value (same as green and blue in grayscale)
             const grey = frontImage.bitmap.data[idx];
