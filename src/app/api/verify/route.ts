@@ -24,7 +24,7 @@ const extractCnicNumber = (ocrText: string) => {
 export async function POST(req: NextRequest) {
   try {
     const formData = await req.formData();
-    const frontCnic = formData.get("frontCnic") as File;
+    const frontCnic = formData.get("front") as File;
     const backCnic = formData.get("backCnic") as File;
 
     console.log("Received files:", {
